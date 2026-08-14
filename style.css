@@ -1,6 +1,38 @@
+/*Tela de Login*/
 body {
-    background-color:white ;
+    background-color:black ;
     font-family:Arial, Helvetica, sans-serif ;
     text-align:center ;
     margin-top:auto ;
+}
+
+h2 {
+    color:aqua;
+    text-align: center;
+}
+
+.login {
+    background-color: white;
+
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding:15px ;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus, textarea:focus {
+    border-color: orange;
+    outline: none;
+    
 }
