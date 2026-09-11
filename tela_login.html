@@ -1,39 +1,618 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corte em Ação</title>
+
+    <title>Corte e Ação - Audiovisual</title>
+
     <link rel="stylesheet" href="style.css">
-    <a href="tela de login.java"></a>
 </head>
+
 <body>
-    <h2>Corte em Ação, seu trabalho nossa missão</h2>
-    <br>
-    <h2>login</h2>
-        <form>
-            <input type="text"
-        </form>
-    <h2>senha</h2>
-        <form>
-            <input type="text"
-        </form>
+
+
+    <!-- =========================
+         TELA DE LOGIN
+    ========================== -->
+
+    <div class="login-page" id="loginPage">
+
+        <div class="login-box">
+
+            <img
+                src="Image.jpg"
+                class="login-logo"
+                alt="Logo Corte e Ação"
+            >
+
+            <h1>Entrar</h1>
+
+            <p class="login-subtitle">
+                Entre na comunidade do audiovisual
+            </p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Digite sua senha"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    ENTRAR
+                </button>
+
+            </form>
+
+
+            <p
+                class="login-message"
+                id="loginMessage"
+            ></p>
+
+
+            <div class="register-area">
+
+                <span>
+                    Não tem uma conta?
+                </span>
+
+                <button id="showRegister">
+                    Criar conta
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         TELA DE CADASTRO
+    ========================== -->
+
+    <div
+        class="login-page hidden"
+        id="registerPage"
+    >
+
+        <div class="login-box">
+
+            <img
+                src="Image.jpg"
+                class="login-logo"
+                alt="Logo Corte e Ação"
+            >
+
+            <h1>Criar conta</h1>
+
+            <p class="login-subtitle">
+                Faça parte da comunidade
+            </p>
+
+
+            <form id="registerForm">
+
+                <label for="registerName">
+                    Nome
+                </label>
+
+                <input
+                    type="text"
+                    id="registerName"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <label for="registerEmail">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="registerEmail"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+
+
+                <label for="registerPassword">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="registerPassword"
+                    placeholder="Crie uma senha"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    class="login-button"
+                >
+                    CRIAR CONTA
+                </button>
+
+            </form>
+
+
+            <p
+                class="login-message"
+                id="registerMessage"
+            ></p>
+
+
+            <div class="register-area">
+
+                <span>
+                    Já possui uma conta?
+                </span>
+
+                <button id="showLogin">
+                    Voltar para login
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         COMUNIDADE
+    ========================== -->
+
+    <div
+        class="app hidden"
+        id="app"
+    >
+
+
+        <!-- =========================
+             MENU LATERAL
+        ========================== -->
+
+        <aside class="sidebar">
+
+
+            <!-- LOGO -->
+
+            <div class="logo-area">
+
+                <img
+                    src="Image.jpg"
+                    alt="Corte e Ação"
+                >
+
+            </div>
+
+
+            <!-- MENU -->
+
+            <div class="menu">
+
+                <p class="menu-title">
+                    MENU
+                </p>
+
+
+                <button
+                    class="menu-item active"
+                    id="homeButton"
+                >
+                    <span>⌂</span>
+                    <span>Início</span>
+                </button>
+
+
+                <button
+                    class="menu-item"
+                    id="exploreButton"
+                >
+                    <span>⌕</span>
+                    <span>Explorar</span>
+                </button>
+
+
+                <button
+                    class="menu-item"
+                    id="jobsButton"
+                >
+                    <span>▣</span>
+                    <span>Minhas vagas</span>
+                </button>
+
+
+
+                <!-- CANAIS -->
+
+                <p class="menu-title">
+                    CANAIS
+                </p>
+
+
+                <button
+                    class="channel active"
+                    data-channel="Geral"
+                >
+                    <span>#</span>
+                    <span>geral</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Vagas de emprego"
+                >
+                    <span>#</span>
+                    <span>vagas-de-emprego</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Produção"
+                >
+                    <span>#</span>
+                    <span>produção</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Direção"
+                >
+                    <span>#</span>
+                    <span>direção</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Edição"
+                >
+                    <span>#</span>
+                    <span>edição</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Áudio"
+                >
+                    <span>#</span>
+                    <span>áudio</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Fotografia"
+                >
+                    <span>#</span>
+                    <span>fotografia</span>
+                </button>
+
+
+                <button
+                    class="channel"
+                    data-channel="Projetos e ideias"
+                >
+                    <span>#</span>
+                    <span>projetos-e-ideias</span>
+                </button>
+
+
+                <!-- CRIAR CANAL -->
+
+                <button
+                    class="create-channel"
+                    id="createChannel"
+                >
+                    <span>＋</span>
+                    Criar canal
+                </button>
+
+            </div>
+
+
+
+            <!-- =========================
+                 USUÁRIO
+            ========================== -->
+
+            <div class="user">
+
+                <div
+                    class="avatar"
+                    id="userAvatar"
+                >
+                    US
+                </div>
+
+
+                <div class="user-info">
+
+                    <strong id="userName">
+                        Usuário
+                    </strong>
+
+                    <small>
+                        ● Online
+                    </small>
+
+                </div>
+
+
+                <button class="settings">
+                    ⚙
+                </button>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- =========================
+             ÁREA PRINCIPAL
+        ========================== -->
+
+        <main class="main">
+
+
+            <!-- TOPO -->
+
+            <header class="topbar">
+
+                <div class="channel-title">
+
+                    <span>#</span>
+
+                    <strong id="channelName">
+                        geral
+                    </strong>
+
+                </div>
+
+
+                <div class="top-actions">
+
+                    <button>
+                        ⌕
+                    </button>
+
+                    <button>
+                        ♢
+                    </button>
+
+                    <button>
+                        ?
+                    </button>
+
+                </div>
+
+            </header>
+
+
+
+            <!-- =========================
+                 CHAT
+            ========================== -->
+
+            <section class="chat">
+
+
+                <!-- MENSAGENS -->
+
+                <div
+                    class="messages"
+                    id="messages"
+                ></div>
+
+
+
+                <!-- CAMPO DE MENSAGEM -->
+
+                <div class="message-area">
+
+                    <button class="add-button">
+                        +
+                    </button>
+
+
+                    <input
+                        type="text"
+                        id="messageInput"
+                        placeholder="Enviar mensagem em #geral"
+                        autocomplete="off"
+                    >
+
+
+                    <button class="emoji-button">
+                        ☺
+                    </button>
+
+
+                    <button
+                        class="send-button"
+                        id="sendButton"
+                    >
+                        ➤
+                    </button>
+
+                </div>
+
+            </section>
+
+        </main>
+
+
+
+        <!-- =========================
+             MEMBROS
+        ========================== -->
+
+        <aside class="members">
+
+            <h3>
+                MEMBROS — 8
+            </h3>
+
+
+            <p class="member-title">
+                ONLINE — 5
+            </p>
+
+
+            <div class="member">
+
+                <div class="avatar online">
+                    JS
+                </div>
+
+                <span>
+                    João Silva
+                </span>
+
+            </div>
+
+
+            <div class="member">
+
+                <div class="avatar online">
+                    MA
+                </div>
+
+                <span>
+                    Maria Alves
+                </span>
+
+            </div>
+
+
+            <div class="member">
+
+                <div class="avatar online">
+                    PC
+                </div>
+
+                <span>
+                    Pedro Costa
+                </span>
+
+            </div>
+
+
+            <div class="member">
+
+                <div class="avatar online">
+                    AS
+                </div>
+
+                <span>
+                    Ana Souza
+                </span>
+
+            </div>
+
+
+            <div class="member">
+
+                <div class="avatar online">
+                    US
+                </div>
+
+                <span id="memberUserName">
+                    Usuário
+                </span>
+
+            </div>
+
+
+            <p class="member-title">
+                OFFLINE — 3
+            </p>
+
+
+            <div class="member offline">
+
+                <div class="avatar">
+                    CM
+                </div>
+
+                <span>
+                    Carla Mendes
+                </span>
+
+            </div>
+
+
+            <div class="member offline">
+
+                <div class="avatar">
+                    RF
+                </div>
+
+                <span>
+                    Rafael Ferreira
+                </span>
+
+            </div>
+
+
+            <div class="member offline">
+
+                <div class="avatar">
+                    GS
+                </div>
+
+                <span>
+                    Gabriel Santos
+                </span>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
 </body>
-<br>
 
-<!--LOGIN-->
-
-<select id="login" class="login">
-
-<h2>Luz e Ação</h2>
-<form>
-
-    <input type="text" placeholder="nome" required>
-    <input type="text" placeholder="email" required>
-    <input type="text" placeholder="senha" required>
-    <input type="text" placeholder="lágrimas" required>
-    
-</form>
-
-</select>
 </html>
